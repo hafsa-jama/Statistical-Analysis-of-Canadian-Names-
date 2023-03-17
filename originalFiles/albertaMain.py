@@ -99,8 +99,8 @@ def main ( argv ):
 
             
 #           turns df into csv
-                people_df.to_csv("albertaM.csv", sep=',', index=False, encoding='utf-8')
-                peoplef_df.to_csv("albertaF.csv", sep=',', index=False, encoding='utf-8')
+                people_df.to_csv("alberta_M.csv", sep=',', index=False, encoding='utf-8')
+                peoplef_df.to_csv("alberta_F.csv", sep=',', index=False, encoding='utf-8')
 
 if __name__ == "__main__":
     main ( sys.argv[1:] )
