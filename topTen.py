@@ -81,7 +81,7 @@ def main (argv):
             people = {'Year':year,'Name':names,'Number':count,'Rank':ranks}
             people_df = pd.DataFrame(people)
 
-            #top10(people_df,2000)
+            top10(people_df,1990)
             longest (people_df,1990)
             shortest (people_df,1990)
             #
