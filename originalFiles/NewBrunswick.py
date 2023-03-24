@@ -55,11 +55,7 @@ def main ( argv ):
         for row in csvReader:
             #    counts number of lines and removes new line from read text and appends it arrays
             # goes through one year at a time
-            #prints the total number of names in the year "year"
-            # What is happening here?
-            #   - include information about strip() and the purpose
-            #     of newranks as opposed to ranks
-            #
+            
 
             if (row[1] == gender) :
                 tempName = row[2].strip()
@@ -71,8 +67,7 @@ def main ( argv ):
         print ( "There are ",total," names in ",gender )
 
         # total could = 0 if file is empty or the chosen year dosent have recorded data
-        #  Why could total == 0?
-        #
+        #  Why could total == 0?     
         if total > 0 :
             people = {'Year':year,'Name':names,'Count':numbers}
             people_df = pd.DataFrame(people)
