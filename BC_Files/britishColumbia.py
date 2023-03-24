@@ -75,19 +75,23 @@ def main(input_file, output_file):
         for j, record in enumerate(sorted_frequency_records, 1):
             records[record_names[record.name]].update_record_rank(year, j)
 
-    # opens the output fileand uses the CSV writer to write data to the file
+    # opens the output file and uses the CSV writer to write data to the file
     with open(output_file, 'w', newline='') as file:
         writer = csv.writer(file)
+
+        # write the header row
+        writer.writerow(['Year', 'Name', 'Count', 'Rank'])
+
+        # iterate through each year in the data
         for year in range(startYear, endYear):
             # creates a list of tuples with each tuple containing the name and rank for each person for the given year
-            rankedList = [(person.name, person.get_record_rank(year)) for person in records if year in person.rank]
+            rankedList = [(person.name, person.get_record_rank(year), int(person.get_record_years().get(year, 0))) for person in records if year in person.rank]
             # sorts the rankedList based on rank
             rankedList.sort(key=lambda x: x[1])
 
             # iterates through each person in the rankedList and writes their information to the CSV file
             for person in rankedList:
-                years = records[record_names[person[0]]].get_record_years()
-                writer.writerow([person[1], year, person[0].upper().replace("_", " "), years[year]])
+                writer.writerow([year, person[0].upper().replace("_", " "), person[2], person[1]])
 
 
 # output files
