@@ -95,6 +95,7 @@ def main ( argv ):
             if totalf > 0 :
                 peoplef = {'Year':yearf,'Name':namesf,'Number':numbersf,'Rank':ranksf}
                 peoplef_df = pd.DataFrame(peoplef)
+                
 
 
             
