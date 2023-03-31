@@ -6,6 +6,11 @@ import getopt
 import csv
 import pandas as pd
 
+from topTen import *
+##from graphs import *
+from Function_file import *
+from topNameByYear import *
+
 def main (argv):
 
     # function that will from the files and store in lists      
@@ -81,21 +86,29 @@ def main (argv):
     read_my_file(fileName_7,NovaScotia_years_M,NovaScotia_names_M,NovaScotia_count_M,NovaScotia_ranks_M)
     read_my_file(fileName_8,NovaScotia_years_F,NovaScotia_names_F,NovaScotia_count_F,NovaScotia_ranks_F)
 
+    al_m = read ("alberta_M.csv")
+    al_f = read("alberta_F.csv")
+    Ns_m = read("NovaScotia_M.csv")
+    Ns_f = read("NovaScotia_F.csv")
+    nb_m = read("NewBrunswick_M.csv")
+    nb_f = read("NewBrunswick_F.csv")
+    bc_f = read("BritishColumbia_F.csv")
+    bc_m = read("BritishColumbia_M.csv")
+
     
 print("\nWelcome to Team Cheetah's CIS2250 Team Project\n")
 user_input = 0
 while user_input != 11:
   print("\n\n Welcome To The Menu \n\n")
-  print("1.    Function 1 - Check if the name is present in a province")
-  print("2.    Function 2 - Displays shortest name from each province")
-  print("3.    Function 3 - Displays most frequently repeated name in a year")
-  print("4.    Function 4 - Comparsion of the first letter in a name from a province in a specific year using a graph")
-  print("5.    Function 5 - Rank of a name from a province over time")
-  print("6.    Function 6 - Displays top 10 names in a province")
-  print("7.    Function 7 - Displays the longest name from each province")
-  print("8.    Function 8 - Displays which gender has more names in a particular year")
-  print("9.    Function 9 - Displays top name for a gender in a province every year")
-  print("10.   Function 10 - Displays the ethnicity of the top ten names from each year")
+  print("1.    Function 1 - Displays shortest name from each province")#Allison
+  print("2.    Function 3 - Displays most frequently repeated name in a year")#Ayo
+  print("3.    Function 4 - Comparsion of the first letter in a name from a province in a specific year using a graph")#tanveer
+  print("4.    Function 5 - Rank of a name from a province over time")#tanveer
+  print("5.    Function 6 - Displays top 10 names in a province")#Ayo
+  print("6.    Function 7 - Displays the longest name from each province")#Allison
+  print("8.    Function 8 - Displays which gender has more names in a particular year")#Ayo
+  print("9.    Function 9 - Displays top name for a gender in a province every year")#Hafsa
+  print("10.   Function 10 - Displays the ethnicity of the top ten names from each year")#Allison
 
 
 
