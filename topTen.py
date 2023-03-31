@@ -165,7 +165,6 @@ def readBC (df):
     return people_df
 
 
-def main (argv):
     al_m = read ("alberta_M.csv")
     al_f = read("alberta_F.csv")
     Ns_m = read("NovaScotia_M.csv")
@@ -178,12 +177,3 @@ def main (argv):
     name_df = readNamesGood()
     #exploration (bc_m,bc_f,1980,name_df)
     top10(nb_m,1980)
-
-
-
-
-
-    
-
-if __name__ == "__main__":
-    main ( sys.argv[1:] )
