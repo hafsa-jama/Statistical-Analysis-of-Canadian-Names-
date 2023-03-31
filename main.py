@@ -84,22 +84,31 @@ def main (argv):
     
 print("\nWelcome to Team Cheetah's CIS2250 Team Project\n")
 user_input = 0
-while user_input == 0:
+while user_input != 10:
   print("\n\n Welcome To The Menu \n\n")
-  print("1.   Function 1 - Check if the name is present in a province")
-  print("2.   Function 2 - Displays shortest name in each province")
-  print("3.   Function 3 - Displays most frequently repeated name in a year")
-  print("4.   Exit\n")
+  print("1.    Function 1 - Check if the name is present in a province")
+  print("2.    Function 2 - Displays shortest name from each province")
+  print("3.    Function 3 - Displays most frequently repeated name in a year")
+  print("4.    Function 4 - Comparsion of the first letter in a name from a province in a specific year using a graph")
+  print("5.    Function 5 - Rank of a name from a province over time")
+  print("6.    Function 6 - Displays top 10 names in a province")
+  print("7.    Function 7 - Displays the longest name from each province")
+  print("8.    Function 8 - Displays which gender has more names in a particular year")
+  print("9.    Function 9 - Displays the ethnicty of the top ten names from each year")
+
+
+
+  print("10.   Exit\n")
 
   try:
     user_input = int(input("Please enter in your choice: "))
 
     if user_input == 1:
-      name = input("Please enter in a name: ")
+      print("choice 1")
       ## calls function ##
 
     elif user_input == 2:
-      name = input("Please enter in a name: ")
+      print("choice 2")
       ## calls function ##
 
     elif user_input == 3:
@@ -107,9 +116,33 @@ while user_input == 0:
       ## calls function ## 
 
     elif user_input == 4:
-      print("Exiting from menu...")
-      break
+      print("choice 4")
+      ## calls function ##
 
+    elif user_input == 5:
+      print("choice 5")
+      ## calls function ##
+
+    elif user_input == 6:
+      print("choice 6") 
+      ## calls function
+
+    elif user_input == 7:
+      print("choice 7")
+
+    elif user_input == 8:
+      print("choice 8")
+
+    elif user_input == 9:
+      print("choice 9")
+
+    elif user_input == 10:
+      print("choice 10")
+
+    elif user_input == 11:
+      print("Exiting from menu......")
+      break
+      
     else:
       print("Error. Please input a valid option.")
       user_input = 0
@@ -117,8 +150,6 @@ while user_input == 0:
   except ValueError:
     print("Error. Please input a valid integer option.")
     user_input = 0
-
-
 
 if __name__ == "__main__":
     main (sys.argv[1:])
