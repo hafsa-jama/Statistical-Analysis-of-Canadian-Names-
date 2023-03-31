@@ -5,6 +5,7 @@ import sys
 import getopt
 import csv
 import pandas as pd
+from Function_file import *
  
 def main ( argv ):
 
@@ -55,7 +56,7 @@ def main ( argv ):
             rankedPeople_df = people_df.assign(Rank=ranks)
             rankedPeople_df = rankedPeople_df.loc[:, ["Year", "Name", "Count", "Rank"]]
 
-            rankedPeople_df.to_csv(outputFileName, sep=',', index=False, encoding='utf-8')
+            rankedPeople_df.to_csv(outputFileName, sep=',', index=False, encoding='utf-8')        
 
 if __name__ == "__main__":
     main ( sys.argv[1:] )
