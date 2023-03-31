@@ -84,7 +84,7 @@ def main (argv):
     
 print("\nWelcome to Team Cheetah's CIS2250 Team Project\n")
 user_input = 0
-while user_input != 10:
+while user_input != 11:
   print("\n\n Welcome To The Menu \n\n")
   print("1.    Function 1 - Check if the name is present in a province")
   print("2.    Function 2 - Displays shortest name from each province")
@@ -94,11 +94,12 @@ while user_input != 10:
   print("6.    Function 6 - Displays top 10 names in a province")
   print("7.    Function 7 - Displays the longest name from each province")
   print("8.    Function 8 - Displays which gender has more names in a particular year")
-  print("9.    Function 9 - Displays the ethnicty of the top ten names from each year")
+  print("9.    Function 9 - Displays top name for a gender in a province every year")
+  print("10.   Function 10 - Displays the ethnicity of the top ten names from each year")
 
 
 
-  print("10.   Exit\n")
+  print("11.   Exit\n")
 
   try:
     user_input = int(input("Please enter in your choice: "))
@@ -134,7 +135,7 @@ while user_input != 10:
       print("choice 8")
 
     elif user_input == 9:
-      print("choice 9")
+      print("Choice 9")
 
     elif user_input == 10:
       print("choice 10")
