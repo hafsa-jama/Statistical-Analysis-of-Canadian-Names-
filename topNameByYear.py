@@ -1,5 +1,7 @@
 import os 
 
+# Hafsa's Functions
+
 def top_name_by_year(gender, province):
     
     # Define the file name based on user input
@@ -42,25 +44,25 @@ def top_name_by_year(gender, province):
         # Sort the dictionary by year
         top_names = dict(sorted(top_names.items(), key=lambda x: int(x[0])))
     # Return the dictionary of top names
-    return top_names
+    #return top_names
+    print("{:<5} {:<10} {}".format("Year", "Name", "Frequency"))
+    for year, (name, freq) in top_names.items():
+        print("{:<5} {:<10} {}".format(year, name, freq))
 
-# asks for user input and stores inside variable
-gender = input("Enter the gender (M/F): ")
+# # asks for user input and stores inside variable
+# gender = input("Enter the gender (M/F): ")
 
-# Check if gender is either M or F
-if gender.upper() not in ["M", "F"]:
-    print("Error. Please make sure to only enter in 'M' or F'")
-    exit()
+# # Check if gender is either M or F
+# if gender.upper() not in ["M", "F"]:
+#     print("Error. Please make sure to only enter in 'M' or F'")
+#     exit()
 
-# asks for user input and stores inside variable
-print("\nCurrent Provinces - British Columbia, Alberta, New Brunswick, Nova Scotia")
-province = input("Please enter the province: ")
+# # asks for user input and stores inside variable
+# print("\nCurrent Provinces - British Columbia, Alberta, New Brunswick, Nova Scotia")
+# province = input("Please enter the province: ")
 
 
 
-# calls function and prints result 
-result = top_name_by_year(gender, province)
-print("{:<5} {:<10} {}".format("Year", "Name", "Frequency"))
-for year, (name, freq) in result.items():
-    print("{:<5} {:<10} {}".format(year, name, freq))
+# # calls function and prints result 
+
 

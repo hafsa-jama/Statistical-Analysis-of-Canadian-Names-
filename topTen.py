@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# Allison's Functions
 
 import os
 import sys
@@ -175,5 +176,4 @@ def readBC (df):
     bc_m = readBC("BritishColumbia_M.csv")
 
     name_df = readNamesGood()
-    #exploration (bc_m,bc_f,1980,name_df)
-    top10(nb_m,1980)
+    exploration (bc_m,bc_f,1980,name_df)
