@@ -58,12 +58,9 @@ def exploration (df,df2,year,names_df):
             else:
                 africa = africa +1
     print("Of the names ranked in the top 100 in",year)
-    if total != 0:
-        print(round(africa/total*100,2),"%"+" are from Africa")
-        print(round(asia/total*100,2), '%' +" are from Asia")
-        print(round(europe/total*100,2), '%' +" are from Europe")
-    else :
-        print("Error")
+    print(round(africa/total*100,2),"%"+" are from Africa")
+    print(round(asia/total*100,2), '%' +" are from Asia")
+    print(round(europe/total*100,2), '%' +" are from Europe")
 
 def nameLis (df):
     print("in")
@@ -102,13 +99,9 @@ def longest (info_df,year):
 
     for x in ind: #goes through index
         if (len(year_df.loc[x, 'Name'])>len(name)):#checks in name at ind is longer than previously longest name
-            namelen = len(year_df.loc[x, 'Name']) #saves names length
+            name = year_df.loc[x, 'Name']#saves name
 
-    print("The longest Name(s) is ")
-
-    for x in ind:
-        if len(year_df.loc[x, 'Name']) == namelen:
-            print(year_df.loc[x, 'Name'])
+    print("The longest Name is " + name)
 
     #shortest name from given year
 def shortest (info_df,year):
@@ -118,13 +111,9 @@ def shortest (info_df,year):
     
     for x in ind: #goes through index
         if (len(year_df.loc[x, 'Name'])<len(name)):#checks in name at ind is shorter than previously shortest name
-            namelen = len(year_df.loc[x, 'Name'])
+            name = year_df.loc[x, 'Name']#saves name
 
-    print("The shortest Name(s) is ")
-
-    for x in ind:
-        if len(year_df.loc[x, 'Name']) == namelen:
-            print(year_df.loc[x, 'Name'])
+    print("The shortest Name is " + name)
 
 
 def read (df):

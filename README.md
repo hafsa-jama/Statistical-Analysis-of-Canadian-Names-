@@ -1,13 +1,13 @@
 # CIS2250-TeamProject
 
-The original data files came from the websites provided 
+To access your branch in terminal:
 
-The new data files were sorted from the original files
+type (git branch -a) to see all available branches
 
-To run the program:
+type (git checkout <name of your branch>)
 
-- Download pandas
+type (git status) to make sure you're on your branch
 
-- go into the CIS2250-TeamProject directory
+make your changes and do your work
 
-- run the program using ".\main.py"
+commit changes and push them into your branch
