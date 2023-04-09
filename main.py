@@ -101,10 +101,10 @@ def main (argv):
     print("\nWelcome to Team Cheetah's CIS2250 Team Project\n")
     user_input = 0
     while user_input != 11:
-        print("\n\n Welcome To The Menu \n\n")
+        print("\n\nWelcome To The Menu\n\n")
         print("1.    Function 1 - Displays shortest name from each province")#Allison
         print("2.    Function 2 - Displays top name for a gender in a province every year")#Hafsa
-        print("3.    Function 3 - Comparsion of the first letter in a name from a province in a specific year using a graph")#tanveer
+        print("3.    Function 3 - Comparision of the first letter in a name from a province in a specific year using a graph")#tanveer
         print("4.    Function 4 - Rank of a name from a province over time")#tanveer
         print("5.    Function 5 - Displays which gender has more names in a particular year")#Ayo
         print("6.    Function 6 - Displays the longest name from each province")#Allison
@@ -120,21 +120,21 @@ def main (argv):
                 while province == 0:
                     provinceMenu()
                     try:
-                        province = int(input("Enter province: "))
+                        province = int(input("\nEnter province: "))
 
                         if province == 1:
                             gender = 0
                             while gender == 0:
                                 genderMenu()
                                 try:
-                                    gender = int(input("Enter gender: "))
+                                    gender = int(input("\nEnter gender: "))
 
                                     if gender == 1:
                                         yearInput = 0
                                         while yearInput == 0:
-                                            print("Enter a year between 1980 and 2022")
+                                            print("\nEnter a year between 1980 and 2022")
                                             try:
-                                                yearInput = int(input("Enter a year: "))
+                                                yearInput = int(input("\nEnter a year: "))
                                                 if yearInput > 1979 and yearInput < 2023:
                                                     shortest (al_m,yearInput)
                                                 else:
@@ -147,9 +147,9 @@ def main (argv):
                                     elif gender == 2:
                                         yearInput = 0
                                         while yearInput == 0:
-                                            print("Enter a year between 1980 and 2022")
+                                            print("\nEnter a year between 1980 and 2022")
                                             try:
-                                                yearInput = int(input("Enter a year: "))
+                                                yearInput = int(input("\nEnter a year: "))
                                                 if (yearInput > 1979 and yearInput < 2023):
                                                     shortest (al_f,yearInput)
                                                 else:
@@ -171,14 +171,14 @@ def main (argv):
                             while gender == 0:
                                 genderMenu()
                                 try:
-                                    gender = int(input("Enter gender: "))
+                                    gender = int(input("\nEnter gender: "))
 
                                     if gender == 1:
                                         yearInput = 0
                                         while yearInput == 0:
-                                            print("Enter a year between 1922 and 2020")
+                                            print("\nEnter a year between 1922 and 2020")
                                             try:
-                                                yearInput = int(input("Enter a year: "))
+                                                yearInput = int(input("\nEnter a year: "))
                                                 if yearInput > 1921 and yearInput < 2021:
                                                     shortest (bc_m,yearInput)
                                                 else:
@@ -191,9 +191,9 @@ def main (argv):
                                     elif gender == 2:
                                         yearInput = 0
                                         while yearInput == 0:
-                                            print("Enter a year between 1922 and 2020")
+                                            print("\nEnter a year between 1922 and 2020")
                                             try:
-                                                yearInput = int(input("Enter a year: "))
+                                                yearInput = int(input("\nEnter a year: "))
                                                 if (yearInput > 1921 and yearInput < 2021):
                                                     shortest (bc_f,yearInput)
                                                 else:
@@ -215,14 +215,14 @@ def main (argv):
                             while gender == 0:
                                 genderMenu()
                                 try:
-                                    gender = int(input("Enter gender: "))
+                                    gender = int(input("\nEnter gender: "))
 
                                     if gender == 1:
                                         yearInput = 0
                                         while yearInput == 0:
-                                            print("Enter a year between 1980 and 2018")
+                                            print("\nEnter a year between 1980 and 2018")
                                             try:
-                                                yearInput = int(input("Enter a year: "))
+                                                yearInput = int(input("\nEnter a year: "))
                                                 if yearInput > 1979 and yearInput < 2019:
                                                     shortest (nb_m,yearInput)
                                                 else:
@@ -235,9 +235,9 @@ def main (argv):
                                     elif gender == 2:
                                         yearInput = 0
                                         while yearInput == 0:
-                                            print("Enter a year between 1980 and 2018")
+                                            print("\nEnter a year between 1980 and 2018")
                                             try:
-                                                yearInput = int(input("Enter a year: "))
+                                                yearInput = int(input("\nEnter a year: "))
                                                 if (yearInput > 1979 and yearInput < 2019):
                                                     shortest (nb_f,yearInput)
                                                 else:
@@ -259,14 +259,14 @@ def main (argv):
                             while gender == 0:
                                 genderMenu()
                                 try:
-                                    gender = int(input("Enter gender: "))
+                                    gender = int(input("\nEnter gender: "))
 
                                     if gender == 1:
                                         yearInput = 0
                                         while yearInput == 0:
-                                            print("Enter a year between 1920 and 2022")
+                                            print("\nEnter a year between 1920 and 2022")
                                             try:
-                                                yearInput = int(input("Enter a year: "))
+                                                yearInput = int(input("\nEnter a year: "))
                                                 if yearInput > 1919 and yearInput < 2023:
                                                     shortest (Ns_m,yearInput)
                                                 else:
@@ -279,9 +279,9 @@ def main (argv):
                                     elif gender == 2:
                                         yearInput = 0
                                         while yearInput == 0:
-                                            print("Enter a year between 1920 and 2022")
+                                            print("\nEnter a year between 1920 and 2022")
                                             try:
-                                                yearInput = int(input("Enter a year: "))
+                                                yearInput = int(input("\nEnter a year: "))
                                                 if (yearInput > 1919 and yearInput < 2023):
                                                     shortest (Ns_f,yearInput)
                                                 else:
@@ -312,14 +312,14 @@ def main (argv):
                 while province == 0:
                     provinceMenu()
                     try:
-                        province = int(input("Enter province: "))
+                        province = int(input("\nEnter province: "))
 
                         if province == 1:
                             gender = 0
                             while gender == 0:
                                 genderMenu()
                                 try:
-                                    gender = int(input("Enter gender: "))
+                                    gender = int(input("\nEnter gender: "))
 
                                     if gender == 1:
                                         top_name_by_year('M', "alberta")
@@ -341,7 +341,7 @@ def main (argv):
                             while gender == 0:
                                 genderMenu()
                                 try:
-                                    gender = int(input("Enter gender: "))
+                                    gender = int(input("\nEnter gender: "))
 
                                     if gender == 1:
                                         top_name_by_year('M', "britishcolumbia")
@@ -362,7 +362,7 @@ def main (argv):
                             while gender == 0:
                                 genderMenu()
                                 try:
-                                    gender = int(input("Enter gender: "))
+                                    gender = int(input("\nEnter gender: "))
 
                                     if gender == 1:
                                         top_name_by_year('M', "newbrunswick")
@@ -384,7 +384,7 @@ def main (argv):
                             while gender == 0:
                                 genderMenu()
                                 try:
-                                    gender = int(input("Enter gender: "))
+                                    gender = int(input("\nEnter gender: "))
 
                                     if gender == 1:
                                         top_name_by_year('M', "novascotia")
@@ -410,29 +410,101 @@ def main (argv):
                         province = 0
 
             elif user_input == 3:
-                nameOverAlphabet(2000, Alberta_names_M, Alberta_years_M)
+                province = 0
+                while province == 0:
+                    provinceMenu()
+                    try:
+                        province = int(input("\nEnter province: "))
+
+                        if province == 1:
+                            yearInput = 0
+                            while yearInput == 0:
+                                print("\nEnter a year between 1980 and 2022")
+                                try:
+                                    yearInput = int(input("\nEnter a year: "))
+                                    if yearInput > 1979 and yearInput < 2023:
+                                        nameOverAlphabet("Alberta", yearInput, Alberta_names_M, Alberta_names_F, Alberta_years_M, Alberta_years_F)
+                                    else:
+                                        print("Incorrect Year")
+                                        yearInput = 0
+                                except ValueError:
+                                    print("Error. Please input a valid integer option.")
+                                    yearInput = 0
+
+                        elif province == 2:
+                            yearInput = 0
+                            while yearInput == 0:
+                                print("\nEnter a year between 1922 and 2020")
+                                try:
+                                    yearInput = int(input("\nEnter a year: "))
+                                    if yearInput > 1921 and yearInput < 2021:
+                                        nameOverAlphabet("BritishColumbia", yearInput, BC_names_M, BC_names_F, BC_years_M, BC_years_F)
+                                    else:
+                                        print("Incorrect Year")
+                                        yearInput = 0
+                                except ValueError:
+                                    print("Error. Please input a valid integer option.")
+                                    yearInput = 0
+
+                        elif province == 3:
+                            yearInput = 0
+                            while yearInput == 0:
+                                print("\nEnter a year between 1980 and 2018")
+                                try:
+                                    yearInput = int(input("\nEnter a year: "))
+                                    if yearInput > 1979 and yearInput < 2019:
+                                        nameOverAlphabet("NewBrunswick", yearInput, NewBrunswick_names_M, NewBrunswick_names_F, NewBrunswick_years_M, NewBrunswick_years_F)
+                                    else:
+                                        print("Incorrect Year")
+                                        yearInput = 0
+                                except ValueError:
+                                    print("Error. Please input a valid integer option.")
+                                    yearInput = 0
+
+                        elif province == 4:
+                            yearInput = 0
+                            while yearInput == 0:
+                                print("\nEnter a year between 1920 and 2022")
+                                try:
+                                    yearInput = int(input("\nEnter a year: "))
+                                    if yearInput > 1919 and yearInput < 2023:
+                                        nameOverAlphabet("NovaScotia", yearInput, NovaScotia_names_M, NovaScotia_names_F, NovaScotia_years_M, NovaScotia_years_F)
+                                    else:
+                                        print("Incorrect Year")
+                                        yearInput = 0
+                                except ValueError:
+                                    print("Error. Please input a valid integer option.")
+                                    yearInput = 0
+
+                        else:
+                            print("Incorrect province")
+                            province = 0
+
+                    except ValueError:
+                        print("Error. Please input a valid integer option.")
+                        province = 0
 
             elif user_input == 4:
                 province = 0
                 while province == 0:
                     provinceMenu()
                     try:
-                        province = int(input("Enter province: "))
+                        province = int(input("\nEnter province: "))
 
                         if province == 1:
                             gender = 0
                             while gender == 0:
                                 genderMenu()
                                 try:
-                                    gender = int(input("Enter gender: "))
+                                    gender = int(input("\nEnter gender: "))
 
                                     if gender == 1:
-                                        username = input("Enter a name: ")
-                                        nameOverTime(username, Alberta_years_M, Alberta_names_M, Alberta_ranks_M)
+                                        username = input("\nEnter a name: ")
+                                        nameOverTime("Alberta", username, Alberta_years_M, Alberta_names_M, Alberta_ranks_M)
 
                                     elif gender == 2:
-                                        username = input("Enter a name: ")
-                                        nameOverTime(username, Alberta_years_F, Alberta_names_F, Alberta_ranks_F)
+                                        username = input("\nEnter a name: ")
+                                        nameOverTime("Alberta", username, Alberta_years_F, Alberta_names_F, Alberta_ranks_F)
 
                                     else:
                                         print("Incorrect gender")
@@ -448,15 +520,15 @@ def main (argv):
                             while gender == 0:
                                 genderMenu()
                                 try:
-                                    gender = int(input("Enter gender: "))
+                                    gender = int(input("\nEnter gender: "))
 
                                     if gender == 1:
-                                        username = input("Enter a name: ")
-                                        nameOverTime(username, BC_years_M, BC_names_M, BC_ranks_M)
+                                        username = input("\nEnter a name: ")
+                                        nameOverTime("BritishColumbia", username, BC_years_M, BC_names_M, BC_ranks_M)
 
                                     elif gender == 2:
-                                        username = input("Enter a name: ")
-                                        nameOverTime(username, BC_years_F, BC_names_F, BC_ranks_F)
+                                        username = input("\nEnter a name: ")
+                                        nameOverTime("BritishColumbia", username, BC_years_F, BC_names_F, BC_ranks_F)
 
                                     else:
                                         print("Incorrect gender")
@@ -471,15 +543,15 @@ def main (argv):
                             while gender == 0:
                                 genderMenu()
                                 try:
-                                    gender = int(input("Enter gender: "))
+                                    gender = int(input("\nEnter gender: "))
 
                                     if gender == 1:
-                                        username = input("Enter a name: ")
-                                        nameOverTime(username, NewBrunswick_years_M, NewBrunswick_names_M, NewBrunswick_ranks_M)
+                                        username = input("\nEnter a name: ")
+                                        nameOverTime("NewBrunswick", username, NewBrunswick_years_M, NewBrunswick_names_M, NewBrunswick_ranks_M)
 
                                     elif gender == 2:
-                                        username = input("Enter a name: ")
-                                        nameOverTime(username, NewBrunswick_years_F, NewBrunswick_names_F, NewBrunswick_ranks_F)
+                                        username = input("\nEnter a name: ")
+                                        nameOverTime("NewBrunswick", username, NewBrunswick_years_F, NewBrunswick_names_F, NewBrunswick_ranks_F)
 
                                     else:
                                         print("Incorrect gender")
@@ -495,15 +567,15 @@ def main (argv):
                             while gender == 0:
                                 genderMenu()
                                 try:
-                                    gender = int(input("Enter gender: "))
+                                    gender = int(input("\nEnter gender: "))
 
                                     if gender == 1:
-                                        username = input("Enter a name: ")
-                                        nameOverTime(username, NovaScotia_years_M, NovaScotia_names_M, NovaScotia_ranks_M)
+                                        username = input("\nEnter a name: ")
+                                        nameOverTime("NovaScotia", username, NovaScotia_years_M, NovaScotia_names_M, NovaScotia_ranks_M)
 
                                     elif gender == 2:
-                                        username = input("Enter a name: ")
-                                        nameOverTime(username, NovaScotia_years_F, NovaScotia_names_F, NovaScotia_ranks_F)
+                                        username = input("\nEnter a name: ")
+                                        nameOverTime("NovaScotia", username, NovaScotia_years_F, NovaScotia_names_F, NovaScotia_ranks_F)
                             
                                     else:
                                         print("Incorrect gender")
@@ -527,14 +599,14 @@ def main (argv):
                 while province == 0:
                     provinceMenu()
                     try:
-                        province = int(input("Enter province: "))
+                        province = int(input("\nEnter province: "))
 
                         if province == 1:
                             yearInput = 0
                             while yearInput == 0:
-                                print("Enter a year between 1980 and 2022")
+                                print("\nEnter a year between 1980 and 2022")
                                 try:
-                                    yearInput = int(input("Enter a year: "))
+                                    yearInput = int(input("\nEnter a year: "))
                                     if yearInput > 1979 and yearInput < 2023:
                                         topGender (al_m, al_f, yearInput)
                                     else:
@@ -547,9 +619,9 @@ def main (argv):
                         elif province == 2:
                             yearInput = 0
                             while yearInput == 0:
-                                print("Enter a year between 1922 and 2020")
+                                print("\nEnter a year between 1922 and 2020")
                                 try:
-                                    yearInput = int(input("Enter a year: "))
+                                    yearInput = int(input("\nEnter a year: "))
                                     if yearInput > 1921 and yearInput < 2021:
                                         topGender (bc_m, bc_f, yearInput)
                                     else:
@@ -562,9 +634,9 @@ def main (argv):
                         elif province == 3:
                             yearInput = 0
                             while yearInput == 0:
-                                print("Enter a year between 1980 and 2018")
+                                print("\nEnter a year between 1980 and 2018")
                                 try:
-                                    yearInput = int(input("Enter a year: "))
+                                    yearInput = int(input("\nEnter a year: "))
                                     if yearInput > 1979 and yearInput < 2019:
                                         topGender (nb_m, nb_f, yearInput)
                                     else:
@@ -577,9 +649,9 @@ def main (argv):
                         elif province == 4:
                             yearInput = 0
                             while yearInput == 0:
-                                print("Enter a year between 1920 and 2022")
+                                print("\nEnter a year between 1920 and 2022")
                                 try:
-                                    yearInput = int(input("Enter a year: "))
+                                    yearInput = int(input("\nEnter a year: "))
                                     if yearInput > 1919 and yearInput < 2023:
                                         topGender (Ns_m, Ns_f, yearInput)
                                     else:
@@ -602,21 +674,21 @@ def main (argv):
                 while province == 0:
                     provinceMenu()
                     try:
-                        province = int(input("Enter province: "))
+                        province = int(input("\nEnter province: "))
 
                         if province == 1:
                             gender = 0
                             while gender == 0:
                                 genderMenu()
                                 try:
-                                    gender = int(input("Enter gender: "))
+                                    gender = int(input("\nEnter gender: "))
 
                                     if gender == 1:
                                         yearInput = 0
                                         while yearInput == 0:
-                                            print("Enter a year between 1980 and 2022")
+                                            print("\nEnter a year between 1980 and 2022")
                                             try:
-                                                yearInput = int(input("Enter a year: "))
+                                                yearInput = int(input("\nEnter a year: "))
                                                 if yearInput > 1979 and yearInput < 2023:
                                                     longest (al_m,yearInput)
                                                 else:
@@ -629,9 +701,9 @@ def main (argv):
                                     elif gender == 2:
                                         yearInput = 0
                                         while yearInput == 0:
-                                            print("Enter a year between 1980 and 2022")
+                                            print("\nEnter a year between 1980 and 2022")
                                             try:
-                                                yearInput = int(input("Enter a year: "))
+                                                yearInput = int(input("\nEnter a year: "))
                                                 if (yearInput > 1979 and yearInput < 2023):
                                                     longest (al_f,yearInput)
                                                 else:
@@ -653,14 +725,14 @@ def main (argv):
                             while gender == 0:
                                 genderMenu()
                                 try:
-                                    gender = int(input("Enter gender: "))
+                                    gender = int(input("\nEnter gender: "))
 
                                     if gender == 1:
                                         yearInput = 0
                                         while yearInput == 0:
-                                            print("Enter a year between 1922 and 2020")
+                                            print("\nEnter a year between 1922 and 2020")
                                             try:
-                                                yearInput = int(input("Enter a year: "))
+                                                yearInput = int(input("\nEnter a year: "))
                                                 if yearInput > 1921 and yearInput < 2021:
                                                     longest (bc_m,yearInput)
                                                 else:
@@ -673,9 +745,9 @@ def main (argv):
                                     elif gender == 2:
                                         yearInput = 0
                                         while yearInput == 0:
-                                            print("Enter a year between 1922 and 2020")
+                                            print("\nEnter a year between 1922 and 2020")
                                             try:
-                                                yearInput = int(input("Enter a year: "))
+                                                yearInput = int(input("\nEnter a year: "))
                                                 if (yearInput > 1921 and yearInput < 2021):
                                                     longest (bc_f,yearInput)
                                                 else:
@@ -697,14 +769,14 @@ def main (argv):
                             while gender == 0:
                                 genderMenu()
                                 try:
-                                    gender = int(input("Enter gender: "))
+                                    gender = int(input("\nEnter gender: "))
 
                                     if gender == 1:
                                         yearInput = 0
                                         while yearInput == 0:
-                                            print("Enter a year between 1980 and 2018")
+                                            print("\nEnter a year between 1980 and 2018")
                                             try:
-                                                yearInput = int(input("Enter a year: "))
+                                                yearInput = int(input("\nEnter a year: "))
                                                 if yearInput > 1979 and yearInput < 2019:
                                                     longest (nb_m,yearInput)
                                                 else:
@@ -717,9 +789,9 @@ def main (argv):
                                     elif gender == 2:
                                         yearInput = 0
                                         while yearInput == 0:
-                                            print("Enter a year between 1980 and 2018")
+                                            print("\nEnter a year between 1980 and 2018")
                                             try:
-                                                yearInput = int(input("Enter a year: "))
+                                                yearInput = int(input("\nEnter a year: "))
                                                 if (yearInput > 1979 and yearInput < 2019):
                                                     longest (nb_f,yearInput)
                                                 else:
@@ -741,14 +813,14 @@ def main (argv):
                             while gender == 0:
                                 genderMenu()
                                 try:
-                                    gender = int(input("Enter gender: "))
+                                    gender = int(input("\nEnter gender: "))
 
                                     if gender == 1:
                                         yearInput = 0
                                         while yearInput == 0:
-                                            print("Enter a year between 1920 and 2022")
+                                            print("\nEnter a year between 1920 and 2022")
                                             try:
-                                                yearInput = int(input("Enter a year: "))
+                                                yearInput = int(input("\nEnter a year: "))
                                                 if yearInput > 1919 and yearInput < 2023:
                                                     longest (Ns_m,yearInput)
                                                 else:
@@ -761,9 +833,9 @@ def main (argv):
                                     elif gender == 2:
                                         yearInput = 0
                                         while yearInput == 0:
-                                            print("Enter a year between 1920 and 2022")
+                                            print("\nEnter a year between 1920 and 2022")
                                             try:
-                                                yearInput = int(input("Enter a year: "))
+                                                yearInput = int(input("\nEnter a year: "))
                                                 if (yearInput > 1919 and yearInput < 2023):
                                                     longest (Ns_f,yearInput)
                                                 else:
@@ -794,14 +866,14 @@ def main (argv):
                 while province == 0:
                     provinceMenu()
                     try:
-                        province = int(input("Enter province: "))
+                        province = int(input("\nEnter province: "))
 
                         if province == 1:
                             yearInput = 0
                             while yearInput == 0:
-                                print("Enter a year between 1980 and 2022")
+                                print("\nEnter a year between 1980 and 2022")
                                 try:
-                                    yearInput = int(input("Enter a year: "))
+                                    yearInput = int(input("\nEnter a year: "))
                                     if yearInput > 1979 and yearInput < 2023:
                                         top10All (al_m, al_f, yearInput)
                                     else:
@@ -814,9 +886,9 @@ def main (argv):
                         elif province == 2:
                             yearInput = 0
                             while yearInput == 0:
-                                print("Enter a year between 1922 and 2020")
+                                print("\nEnter a year between 1922 and 2020")
                                 try:
-                                    yearInput = int(input("Enter a year: "))
+                                    yearInput = int(input("\nEnter a year: "))
                                     if yearInput > 1921 and yearInput < 2021:
                                         top10All (bc_m, bc_f, yearInput)
                                     else:
@@ -829,9 +901,9 @@ def main (argv):
                         elif province == 3:
                             yearInput = 0
                             while yearInput == 0:
-                                print("Enter a year between 1980 and 2018")
+                                print("\nEnter a year between 1980 and 2018")
                                 try:
-                                    yearInput = int(input("Enter a year: "))
+                                    yearInput = int(input("\nEnter a year: "))
                                     if yearInput > 1979 and yearInput < 2019:
                                         top10All (nb_m, nb_f, yearInput)
                                     else:
@@ -844,9 +916,9 @@ def main (argv):
                         elif province == 4:
                             yearInput = 0
                             while yearInput == 0:
-                                print("Enter a year between 1920 and 2022")
+                                print("\nEnter a year between 1920 and 2022")
                                 try:
-                                    yearInput = int(input("Enter a year: "))
+                                    yearInput = int(input("\nEnter a year: "))
                                     if yearInput > 1919 and yearInput < 2023:
                                         top10All (Ns_m, Ns_f, yearInput)
                                     else:
@@ -869,14 +941,14 @@ def main (argv):
                 while province == 0:
                     provinceMenu()
                     try:
-                        province = int(input("Enter province: "))
+                        province = int(input("\nEnter province: "))
 
                         if province == 1:
                             yearInput = 0
                             while yearInput == 0:
-                                print("Enter a year between 1980 and 2022")
+                                print("\nEnter a year between 1980 and 2022")
                                 try:
-                                    yearInput = int(input("Enter a year: "))
+                                    yearInput = int(input("\nEnter a year: "))
                                     if yearInput > 1979 and yearInput < 2023:
                                         exploration (al_m,al_f,yearInput,name_df)
                                     else:
@@ -889,9 +961,9 @@ def main (argv):
                         elif province == 2:
                             yearInput = 0
                             while yearInput == 0:
-                                print("Enter a year between 1922 and 2020")
+                                print("\nEnter a year between 1922 and 2020")
                                 try:
-                                    yearInput = int(input("Enter a year: "))
+                                    yearInput = int(input("\nEnter a year: "))
                                     if yearInput > 1921 and yearInput < 2021:
                                         exploration (bc_m,bc_f,yearInput,name_df)
                                     else:
@@ -904,9 +976,9 @@ def main (argv):
                         elif province == 3:
                             yearInput = 0
                             while yearInput == 0:
-                                print("Enter a year between 1980 and 2018")
+                                print("\nEnter a year between 1980 and 2018")
                                 try:
-                                    yearInput = int(input("Enter a year: "))
+                                    yearInput = int(input("\nEnter a year: "))
                                     if yearInput > 1979 and yearInput < 2019:
                                         exploration (nb_m,nb_f,yearInput,name_df)
                                     else:
@@ -919,9 +991,9 @@ def main (argv):
                         elif province == 4:
                             yearInput = 0
                             while yearInput == 0:
-                                print("Enter a year between 1920 and 2022")
+                                print("\nEnter a year between 1920 and 2022")
                                 try:
-                                    yearInput = int(input("Enter a year: "))
+                                    yearInput = int(input("\nEnter a year: "))
                                     if yearInput > 1919 and yearInput < 2023:
                                         exploration (Ns_m,Ns_f,yearInput,name_df)
                                     else:
